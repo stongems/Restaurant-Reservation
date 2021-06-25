@@ -5,8 +5,9 @@ let path = require("path");
 let app = express();
 let PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+//======= WAS BODY PARSER =======
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // =============================================BLANK ARRAYS
 let data = {
